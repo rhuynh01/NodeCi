@@ -23,11 +23,11 @@ describe('Header testing', () => {
     expect(url).toMatch(/accounts\.google\.com/);
   });
 
-  test.skip('should show logout button when user is signed in', async () => {
-    await page.login();
+  // test.skip('should show logout button when user is signed in', async () => {
+  //   await page.login();
 
-    const text = await page.$eval('a[href="/auth/logout"]', el => el.innerHTML);
+  //   const text = await page.$eval('a[href="/auth/logout"]', el => el.innerHTML);
 
-    expect(text).toEqual('Logout');
-  });
+  //   expect(text).toEqual('Logout');
+  // });
 });
